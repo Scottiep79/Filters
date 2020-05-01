@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <p id = "output"></p>
+    <p id = "output1"></p>
+    <script>
+      var rockets = [
+       { name:"Sally", age:32 },
+       { name:"Bob", age:23 },
+       { name:"Jim", age:16 },
+       { name:"Scott Rhine", age:7 },
+       { name:"Angie Davison", age:4 },
+       { name:"James Munger", age:3 }
+      ];
+      /*var uniqueArray = rockets.filter(function(elem, index, rockets) {
+        return rockets.indexOf(elem) === index;
+          }
+      );*/
+      var e = "";   
+    
+        for (var y=0; y<rockets.length; y++){
+        e +=  rockets[y].name + "," + rockets[y].age + "<br/>";
+        }
+      var rockets1 = rockets.filter(function(elem, index, array){
+        return rockets
+       }
+       );
+
+      
+      document.getElementById("output").innerHTML = e;
+      document.getElementById("output1").innerHTML = rockets1;
+
+
+    </script>
+  </body>
+</html>

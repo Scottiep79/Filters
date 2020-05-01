@@ -27,14 +27,19 @@
         for (var y=0; y<rockets.length; y++){
         e +=  rockets[y].name + "," + rockets[y].age + "<br/>";
         }
-      var rockets1 = rockets.filter(function(elem, index, array){
-        return rockets
-       }
-       );
+         var rockets1 = rockets.filter(function (e) {
+         return e.age > 18;
+        });
+      var f = "";   
+    
+        for (var y=0; y<rockets1.length; y++){
+        f +=  rockets1[y].name + "," + rockets1[y].age + "<br/>";
+        }  
+
 
       
       document.getElementById("output").innerHTML = e;
-      document.getElementById("output1").innerHTML = rockets1;
+      document.getElementById("output1").innerHTML = f;
 
 
     </script>
